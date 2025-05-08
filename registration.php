@@ -74,11 +74,13 @@ require_once('classes/functions.php');
 <html lang="en">
 <head>
   <!-- Required meta tags -->
+ 
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="./bootstrap-4.5.3-dist/css/bootstrap.css">
   <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="package/dist/sweetalert2.css">
   <!-- JQuery for Address Selector -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
  
@@ -95,6 +97,9 @@ require_once('classes/functions.php');
   </style>
 </head>
 <body>
+ 
+<script src="package/dist/sweetalert2.js"></script>>
+ 
 <?php
 // Output SweetAlert script if set
 if (!empty($sweetAlertConfig)) {
@@ -241,7 +246,7 @@ if (!empty($sweetAlertConfig)) {
         </div>
       </div>
       <button type="button" class="btn btn-secondary mt-3" onclick="prevStep()">Previous</button>
-      <button type="submit" name="multisave" class="btn btn-primary mt-3">Sign Up</button>
+      <button type="submit" name="register" class="btn btn-primary mt-3">Sign Up</button>
       <a class="btn btn-outline-danger mt-3" href="index.php">Go Back</a>
     </div>
   </form>
